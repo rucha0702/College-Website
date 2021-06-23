@@ -1,6 +1,9 @@
 /* body {
   background: #333;
 } */
+* {
+  box-sizing: border-box;
+}
 h1,
 h2 {
   font-size: 20px;
@@ -108,6 +111,15 @@ h2 {
 .contact-one,
 .contact-two,
 .left,
-.right {
+.right,
+.contact-three {
   flex: 1;
+  animation: none;
+}
+#contact {
+  height: 100%;
+  margin: 10px 20px;
+}
+body {
+  height: 100%;
 }
