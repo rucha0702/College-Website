@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="mobile.css">
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <img src="JSS_Logo.png" width="100px" alt="jss" />
+        <p>
+          JSS MAHAVIDYAPEETHA <br />
+          JSS ACADEMY OF TECHNICAL EDUCATION NOIDA <br />
+          Affiliated to Dr. A.P.J. Abdul Kalam Technical University, Lucknow
+          <br />
+         <span> College Code 091 <br />
+          C-20/1 Sector-62, Noida</span>
+        </p>
+        <p></p>
+      </div>
+    </nav>
+
+    <div>
+      <div class="background"></div>
+      <ul id="link-bar" class="link-list">
+        <li><a href="index.html" class="link">Home</a></li>
+        <li><a href="#allBlocks" class="link abt">About</a></li>
+        <li><a href="society.html" class="link">Socities</a></li>
+       
+        <!-- <li><select name="Academics" id="acad">
+          <option value="haah"><a href="society.html">Academics</a></option>
+          <option value="haah"><a href="society.html">BTech</a></option>
+          <option value="haah"><a href="society.html">BPharma</a></option>
+          <option value="haah"><a href="society.html">Examinations</a></option>
+        </select></li> -->
+        <li><a href="contact.html" class="link">Contact</a></li>
+      </ul>
+    </div>
+    <section id="allBlocks">
+      <div class="row-1">
+        <div class="box box-1 vision">
+          <h1>VISION</h1>
+          <p>
+            JSS Academy of Technical Education Noida aims to become an Institution of excellence in imparting quality Outcome Based Education that empowers the young generation with Knowledge, Skills, Research, Aptitude and Ethical values to solve Contemporary Challenging Problems
+          </p>
+        </div>
+        <div class="box mission">
+          <h1>MISSION</h1>
+          <p>
+            <ol>
+              <li>Develop a platform for achieving globally acceptable level of intellectual acumen and technological competence</li>
+              <li>Create an inspiring ambience that raises the motivation level for conducting quality research</li>
+              <li>Provide an environment for acquiring ethical values and positive attitude</li>
+            </ol>
+          </p>
+        </div>
+        <div class="box box-2 nba">
+          <img class="small" src="nba.png" alt="">
+          <p>NBA Accreditation of JSS Academy of Technical Education Noida – NBA Accredited Programme at Engineering wing.</p>
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="obe">
+          <h1>OUTCOME-BASED EDUCATION (OBE) AT JSSATE</h1>
+           <p>
+            JSS Academy of Technical Education, Noida has implemented Outcome Based Education (OBE) in the Academy. JSSATEN is proud to mention that it has created necessary manpower and infrastructure to implement Outcome Based Education from the year 2014 - 15. So far the Technical Institutions have been imparting teaching through a traditional system where the learning outcomes of the students are not clearly measured. The ’Washington Accord’ emphasise on outcome based education.
+           </p>
+        </div>
+        <div class="principal">
+          <h1>Principal's Desk</h1>
+          <span class="principal-inside">
+            <img class="small pr" src="principal.jpg" alt="">
+            <p>Being recognised as one of the best Technical Institutions, JSS Academy of Technical Education, Noida (JSSATEN) is adopting cautiously to the changing demands of technical manpower at global level. The Academy envisions to become an Institution of Excellence in imparting quality Outcome Based Education that empowers young generation with knowledge, skills, research aptitude, ethics and moral values.</p>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-1">
+        <h3> JSS Academy Of Technical Education  C-20/1, Sector-62, NOIDA, DISTT.U.P., INDIA-201301</h3>
+        <p><i class="fas fa-phone-alt"></i>0120-2400104, 2400115</p>
+        <p><i class="fas fa-envelope"></i>principal@jssaten.ac.in</p>
+      </div>
+      <div class="footer-2">
+        <span><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></span>
+        <p>Site Map | © JSSATEN - All right reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $('.abt').on('click', function (event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html,body').animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+/* body {
+  background: #333;
+} */
+h1,
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+.navbar {
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+}
+.navbar > p span {
+  display: none;
+}
+#link-bar {
+  left: 100px;
+  top: 300px;
+}
+.link-list {
+  flex-direction: column;
+}
+#link-bar li {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 10px 10px;
+  margin: 5px;
+}
+#link-bar li:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#link-bar li a {
+  color: white;
+}
+.row-1,
+.row-2 {
+  flex-direction: column;
+}
+.row-1 div,
+.row-2 div {
+  width: 100%;
+  padding: 20px 20px;
+}
+.box {
+  border-radius: 0;
+}
+
+.principal-inside {
+  flex-direction: column;
+}
+.small {
+  height: 100px;
+  width: 100px;
+}
+.pr {
+  height: 170px;
+  width: 170px;
+  align-self: center;
+}
+.principal {
+  border-left: none;
+  border-top: 2px solid var(--box-1);
+  padding-left: 0;
+}
+.sidebar {
+  display: none;
+}
+.society-box img {
+  height: 150px;
+}
+.sb {
+  flex-direction: column;
+  margin-top: 20px;
+}
+.society-box {
+  flex-direction: column;
+}
+.arrow {
+  margin: 0;
+  margin-left: 20px;
+}
+.sb > div {
+  padding-bottom: 0;
+  padding-top: 10px;
+}
+.arrow {
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.para {
+  margin: 20px 0;
+}
+.sb h1 {
+  margin: 10px 0;
+}
+.contact-two {
+  flex-direction: column;
+  margin: 20px 30px;
+}
+
+.contact-one ul {
+  display: none;
+}
+.contact-three {
+  margin-top: 200px;
+}
+.contact-one,
+.contact-two,
+.left,
+.right {
+  flex: 1;
+}
