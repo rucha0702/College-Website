@@ -1,6 +1,6 @@
-/* body {
-  background: #333;
-} */
+body {
+  font-weight: 700;
+}
 * {
   box-sizing: border-box;
 }
@@ -9,31 +9,36 @@ h2 {
   font-size: 20px;
   text-align: center;
 }
-.navbar {
+
+.top {
   flex-direction: column;
   align-items: center;
   font-size: 16px;
 }
-.navbar > p span {
+.top > p span {
   display: none;
 }
-#link-bar {
+/* #link-bar {
   left: 100px;
   top: 300px;
-}
+} */
 .link-list {
   flex-direction: column;
+  background: none;
 }
 #link-bar li {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   padding: 10px 10px;
   margin: 5px;
+  display: flex;
+  justify-content: center;
 }
 #link-bar li:hover {
   background: rgba(0, 0, 0, 0.9);
 }
 #link-bar li a {
+  align-self: center;
   color: white;
 }
 .row-1,
@@ -80,13 +85,15 @@ h2 {
 .society-box {
   flex-direction: column;
 }
-.ncs-main {
+.society-box {
   margin-bottom: 200px;
   margin-top: 100px;
 }
 .arrow {
   margin: 0;
   margin-left: 20px;
+  margin-top: 50px;
+  align-self: center;
 }
 .sb > div {
   padding-bottom: 0;
@@ -127,7 +134,29 @@ form {
 } */
 #contact {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 body {
   height: 100%;
+}
+#options {
+  background: none;
+}
+.footer-2 {
+  display: none;
+}
+.footer-1 {
+  flex: 1;
+}
+.right > div {
+  width: 100%;
+  border-top: 2px #333 solid;
+}
+.contact-two {
+  margin: 0 30px;
+}
+
+.contact-one h2 {
+  margin: 20px;
 }
